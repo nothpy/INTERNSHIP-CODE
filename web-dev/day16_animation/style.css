@@ -1,0 +1,51 @@
+section{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    position: absolute;
+    animation-name: move;
+    margin: 20px;
+    animation-duration: 30s ;
+    animation-iteration-count: infinite;
+    border-radius: 100%;
+}
+/* create animation */
+@keyframes move{
+    0%{
+        top: 0;
+        left: 0;
+        transform: scale(0.5);
+    }
+    25%{
+        top:0;
+        left: calc(100vw - 200px);
+        background-color: black;
+        transform: scale(1.5);
+    }
+    50%{
+        top: 500px;;
+        left: calc(100vw - 200px);
+        background-color: rgb(250, 15, 15);
+        transform: scale(0.5);
+    }
+    75%{
+        top: 500px;
+        left: 0;
+        background-color: green;
+        transform: scale(1.5);
+    }
+    100%{
+        background-color: blue;
+        transform: scale(0.5);
+        top: 0;
+        left: 0;
+    }
+}
+
+/* css function  */
+/* 
+var()
+cal()
+scale()
+
+*/

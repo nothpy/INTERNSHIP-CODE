@@ -1,0 +1,43 @@
+
+/* 
+1.default position is static
+2. positiion fixed and position absalute are work same but diffrence in scrolling. absolute element are scrollable and fixed element are not scrollable . and both are take reference from view port
+3.
+
+*/
+section{
+    /* height: 300px;
+    width: 300px; */
+    background-color: red;
+    position:absolute;
+    /* bottom: 0; */
+    /*by deafault in lefft only */
+     right: 0;
+     bottom: 0;
+    
+}
+.kg{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(92, 255, 16);
+    position: fixed;
+}
+article{
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    position: sticky;
+}
+footer{
+    height: 600px;
+    width: 800px;
+    background-color: black;
+    position: relative;
+}
+div{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    position: absolute;
+    right: 0;
+}

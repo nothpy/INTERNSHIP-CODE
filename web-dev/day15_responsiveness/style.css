@@ -1,0 +1,28 @@
+section{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(250, 238, 12);
+}
+span{
+    background-color: green;
+    color: white;
+}
+/* media queries  */
+@media (max-width:1024px){
+      section{
+        background-color: red;
+      }
+      span{
+        background-color: black;
+        color: white;
+      }
+}
+@media (max-width:768px){
+    section{
+      background-color: green;
+    }
+    span{
+        background-color: rgb(254, 8, 8);
+        color: white;
+      }
+}

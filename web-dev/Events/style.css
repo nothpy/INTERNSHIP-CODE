@@ -1,0 +1,21 @@
+section{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+article{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+div{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+}
