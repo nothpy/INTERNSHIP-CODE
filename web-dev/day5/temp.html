@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to Athene Network</title>
+<style>
+body {
+  background-color: #000;
+  color: #00FF00;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 5em;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00FF00;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  background-image: url('athene-logo.png');
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #00FF00;
+  margin-bottom: 20px;
+}
+
+.network {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00FF00;
+}
+
+.circles {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(0, 255, 0, 0.2);
+  box-shadow: 0 0 10px #00FF00;
+  animation: rotate 10s linear infinite;
+}
+
+.circle:nth-child(1) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 1s;
+}
+
+.circle:nth-child(2) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-delay: 2s;
+}
+
+.circle:nth-child(3) {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  animation-delay: 3s;
+}
+
+.circle:nth-child(4) {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-delay: 4s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  color: #00FF00;
+  font-size: 1em;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>WELCOME TO</h1>
+    <div class="logo"></div>
+    <h1 class="network">ATHENE NETWORK</h1>
+    <div class="circles">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </div>
+  <div class="footer">
+    &copy; 2023 Athene Network
+  </div>
+</body>
+</html>
