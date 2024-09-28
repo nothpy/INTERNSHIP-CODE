@@ -1,0 +1,6 @@
+KEYWORD -->
+    keyword is reserved word which are perform some specific task.
+IDENTIFIER-->
+    1.it is the name of class, name of method , name of variables, name of constructer, name of interface ,or name of any member in the program.
+    2.Identifier are uses given name.
+    3.identifier are use for identification purpose only it does not have specific task.

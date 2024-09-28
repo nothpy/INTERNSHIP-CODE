@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        main{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            color: white;
+            border: 5px solid rgb(0, 0, 0);
+            padding: 10px;
+            box-sizing: content-box; /* content-box are show only height and width of content height and width cannot change when we give padding  */
+        }
+        section{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(128, 0, 0);
+            color: white;
+            border: 5px solid rgb(0, 0, 0);
+            padding: 10px;
+            box-sizing: border-box;
+            margin: 20px;
+        }
+        article{
+            height: auto;
+            width: 200px;
+            background-color: lightblue;
+            /* padding: 20px;
+            padding-top: 20px;
+            padding-left: 15px;
+            padding-bottom: 40px; */
+            padding: 20px 10px 30px 50px;
+        }
+        /*  1. when we give padding in any box then size of box are increase size = margin+border+padding .
+            2. margin accept negative value and padding not accept negative value beacause inside content have not space  but outside space are available .
+        */
+    </style>
+</head>
+<body>
+    <main>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab vel, soluta eum, praesentium ducimus maiores delectus quasi itaque dolorem alias necessitatibus provident autem quae repellendus accusamus perferendis nulla ipsam numquam.
+    </main>
+    <section>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab vel, soluta eum, praesentium ducimus maiores delectus quasi itaque dolorem alias necessitatibus provident autem quae repellendus accusamus perferendis nulla ipsam numquam.
+    </section>
+    <article>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus ipsam tempora dolores labore culpa a consequuntur aperiam totam laboriosam porro numquam cum doloribus, quaerat itaque voluptatibus sed eligendi exercitationem incidunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo minima ex eaque! Beatae ratione cum commodi. Quae, itaque repellat ab incidunt atque suscipit aliquam doloribus numquam, qui sequi nemo totam!
+    </article>
+   <img src="" alt="" style="background-color: red;" height="10px" width="10px"> <!--  image tag is inline as well as block element -->
+</body>
+</html>

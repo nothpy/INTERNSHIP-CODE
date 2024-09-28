@@ -1,0 +1,92 @@
+KEYWORD -->
+    keyword is reserved word which are perform some specific task.
+IDENTIFIER-->
+    1.it is the name of class, name of method , name of variables, name of constructor, name of interface ,or name of any member in the program.
+    2.Identifier are uses given name.
+    3.identifier are use for identification purpose only it does not have specific task.
+VARIABLESA-->
+    1. variable is container of memory block where we can store a value.
+    2. we can change a value of variables anytime
+    variables declaration--->
+         1. providing data type to a variables then it is called variable declaration.
+                   int x, double y , long z , char p 
+
+ GLOBAL AND LOCAL VARIABLES
+         1. A local variable don't have default value so in order to this we have to initialize value otherwise it give compilation error.
+         2. We must not declare the same variable more than once.
+         3. we can change the value of variable multiple time 
+CONDITIONAL OPERATOR 
+                               operand1 ? operand2 : operand3
+            CONDITIONAL operator is ternary operator. if operand1 is true than control will go to operand2. 
+            if operand1 is false than control will go to operand3.
+User Input Output
+          import java.util.Scanner;
+            java --> project
+            util --> package
+            Scanner -->clas name
+    USE METHODS OF SCANNER CLASS 
+            boolean -- > nextBoolean()
+            byte --> nextByte()
+            short --> nextShort()
+            int --> nextInt()
+            long --> nextLong()
+            float--> nextFloat()
+            double --> nextDouble()
+            String --> nextLine()
+            char -->   next().charAt(0)
+CONSTRUCTOR --> constructor is class name.it is used to load  all non static member inside object 
+    (i) Default  (ii) user defined--> (a) No argument  (b) parameterized
+     
+    DEFAULT CONSTRUCTOR--->IF there no userdefind constructor present in the class then compiler will add one constructor after compilation.
+    
+    notes
+      constructor name wiil be same as class name.
+      constructor have no return type.
+      constructor not have non acces modifier ( static final abstract etc.. ).
+      constructor have acces modifier ( public private protected ) 
+     this keyword is used to refer global non static memberzzzzz
+          
+CONSTRUCTOR OVERLOADING => multiple constructor are present in one class.
+METHOD OVERLOADING => in multiple methods with same name and different parameter are present in a class then it is method overloading .it does not depend on modifier and acces
+
+ENCAPSULATION --->  data members + behaviour
+     wrapping a data members and behaviours in a single class is called encapsulation .
+
+     To achieve the encapsulation we made data memebers private and we made public getters and setters  
+
+
+
+
+
+
+
+
+
+
+APPLICATION WITH DIFFRENT PROGRAMMING LANGUAGES
+    web app, mobile app, desktop app. 
+  (1)  Web app with java 
+      v(i)     
+            Front-End => HTML , CSS , Java-Script  , ReactJs(library)/ AngularJs(framework)/ ViewJs
+            Back-End(server side)  => JDBC , Java ,  Servlet , Jsp 
+            DataBase => MySql (RDBMS);
+            Server => Tomcat , WebSphere
+            in this method all code in one folder frontend and backend. this is monolethic
+
+      (ii)      
+            Frontend => HTML, CSS, JS 
+            BackEnd => Hibernate , Core-JAVA , Spring mvc
+            DataBase => MySql   
+            Server => Apache , Tomcat , Sap
+            this is microprocessic
+      (iii) 
+            Front-End => HTML , CSS  , JS , ReactJs/AngularJs/ViewJs. all frontend code are in different folder.
+            BAck-End =>  JAVA , JDBC ,  Hibernate , Spring Boot.
+            server => Tomcat
+
+
+MAVEN PROJECTS
+   
+    click on file --> go new --> other --->maven project --> org.apache.maven --> artifactid: maven-archtype-webapp , version: 1.4 --> Group id = domainName.companyName , artifactid = servlet-jsp-crud-operation , vrsion = , PackageName = ;
+
+

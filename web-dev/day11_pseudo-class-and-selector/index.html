@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* simple selector
+            tag, id, class
+         */
+         
+        /* pseudo class -> it is denoted by single colon (:)
+           1.link
+           2.hover
+           3.active
+           4.visited
+           5.focus
+        */
+
+        a:link {
+            color: rgb(255, 0, 0);
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a:visited {
+            color: rgb(212, 38, 225);
+        }
+
+        ul>li:hover {
+            background-color: black;
+            color: white;
+        }
+
+        /* pseudo class selector --> it is denoted by double colon (::) */
+        p::first-letter {
+            color: red;
+            font-size: 30px;
+        }
+
+        p::first-line {
+            color: aqua;
+        }
+
+        .head::before {
+            content: '😊(┬┬﹏┬┬)ಥ_ಥ^';
+            font-size: 30px;
+        }
+
+        .head::after {
+            content: "Everyone";
+            font-size: 60px;
+        }
+
+        section::selection {
+            background-color: red;
+            color: white;
+        }
+
+         ul>li::marker { /*marker use only for li . this do only disc style property */
+            color: red;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>welcome pseudo classes </h1>
+    <a href="https://www.flipkart.com/">this is flipcart link</a><br>
+    <a href="https://udarifoundation.org/">Udari Foundation</a>
+    <ul>
+        <li>HTMl</li>
+        <li>CSS</li>
+        <li>Java-Script</li>
+        <li>Python</li>
+        <li>C++</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, deserunt nesciunt quisquam accusantium est
+        eveniet nobis expedita rerum sed harum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis unde
+        nesciunt fugiat ea, est rerum minima deleniti, sint vel excepturi voluptate molestias. Nesciunt cumque hic amet
+        repudiandae tempore eligendi neque.
+    </p>
+    <h1 class="head">hello!</h1>
+    <section>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis aliquid dolore dolores consectetur, earum
+        tempora saepe voluptatum cupiditate, ratione minus nobis dolor quia aperiam rem ducimus voluptates quam, ut
+        itaque!
+    </section>
+    <ul>
+        <li>NODE</li>
+        <li>MONGO</li>
+        <li>EXPRESS</li>
+    </ul>
+</body>
+
+</html>

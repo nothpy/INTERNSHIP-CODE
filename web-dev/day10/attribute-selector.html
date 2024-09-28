@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+            padding: 10px;
+            margin: 10px;
+            box-sizing: border-box;
+
+        }
+
+        div {
+            width: 600px;
+            height: 300px;
+            /* background-color: red; */
+            margin: 10px;
+        }
+
+        [title ="HYPERTEXT MARKUP LANGUAGE"] {
+            /* Attribute selector */
+            background-color: red;
+        }
+
+        [reversed] {
+            font-size: 25px;
+        }
+         [title^="H"]{/* start atleast from H */
+            background-color: red;
+        }
+        [title^="tonny-k"]{
+            background-color: aqua;
+        }
+        [title*="j k"]{
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-yellow" title="HYPERTEXT MARKUP LANGUAGE"> What is HTMl!..</div>
+    <div title="cascading stylesheet">Lorem ipsum dolor sit amet.</div>
+    <ol type="a" reversed>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ol>
+    <ol type="1">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ol>
+    <ol type="i">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ol>
+    <div title="tonny-kakkar">Tonny Kakkar</div>
+    <div title="tonny-stark">Tonny Stark</div>
+    <div title="j k l">div1</div>
+    <div title="m p o">div2</div>
+</body>
+
+</html>

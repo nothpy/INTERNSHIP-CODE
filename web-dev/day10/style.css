@@ -1,0 +1,55 @@
+/* (A) simple selector.
+tag name
+class name (.)
+id (#)
+grouping selector (,)
+universal selector(*)
+*/
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 10px solid  green; */
+
+}
+div,main,section{ /* grouping selector*/
+    width: 600px;
+    height: 300px;
+    background-color:red;
+    margin: 10px;
+}
+.bg-red{
+  background-color: red;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+.bg-blue{
+    background-color: blue;
+}
+.bg-green{
+    background-color: green;
+}
+.h-w{
+    height: 20vh;
+    width: 1080px;
+} 
+/*(B) combinator selector .
+1.child selector
+2. descendent( coming generation)  selector
+3. adjecent sibling selector
+4. universal sibling selector
+*/
+/* child selector (>) */
+section>p{
+    color: white;
+    background-color: black;
+}
+/* descendent selector */
+main section{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+/* Adjecent selector */
